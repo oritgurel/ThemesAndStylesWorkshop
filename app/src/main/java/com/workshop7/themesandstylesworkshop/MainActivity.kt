@@ -1,7 +1,9 @@
 package com.workshop7.themesandstylesworkshop
 
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.Menu
+import androidx.appcompat.app.AlertDialog
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -11,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.ui.*
+import com.workshop7.themesandstylesworkshop.NewsApp.Companion.shouldChangeDefaultTheme
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,9 +28,8 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        fab.setOnClickListener {
+            showPremiumDialog()
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
@@ -40,6 +42,14 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
+    override fun getTheme(): Resources.Theme {
+        val newTheme = super.getTheme()
+        if (shouldChangeDefaultTheme) {
+            newTheme.applyStyle(R.style.ThemeOverlay_AppCompat_Dark, true)
+        }
+        return newTheme
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
@@ -49,5 +59,21 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+    }
+
+    private fun showPremiumDialog() {
+        //todo set the theme
+        AlertDialog.Builder(this)
+                .setTitle(R.string.premium_popup_title)
+                .setMessage("* All hot news \n* Personalized notifications \n* More hot news")
+                .setPositiveButton("Join") { dialog, _ ->
+                    shouldChangeDefaultTheme = true
+                    dialog.dismiss()
+                    recreate()
+                }
+                .setNegativeButton("Later") { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .create().show()
     }
 }
