@@ -15,8 +15,13 @@
         <!-- Customize your theme here. -->
         <!--  Divider-->
         <item name="android:listDivider">@drawable/news_divider</item>
-        <!--        Custom attr-->
+        <!-- Custom attr-->
         <item name="popupMenuTextColor">?attr/colorOnSurface</item>
+        <!-- TextAppearance-->
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MdcTypographyStyles.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MdcTypographyStyles.Headline5</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MdcTypographyStyles.Subtitle2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MdcTypographyStyles.Button</item>
     </style>
 
     <style name="AppTheme.Pro">
