@@ -13,7 +13,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
+        <!--  Divider-->
+        <item name="android:listDivider">@drawable/news_divider</item>
         <!--        Custom attr-->
         <item name="popupMenuTextColor">?attr/colorOnSurface</item>
     </style>
@@ -32,8 +33,8 @@
         <!-- Customize your theme here. -->
     </style>
 
-        Theme Overlays
-     Toolbar
+<!--     Theme Overlays-->
+<!--     Toolbar-->
     <style name="ToolbarPopupOverlay" parent="">
         <!-- This is a custom attribute we declared:-->
         <item name="android:textColorPrimary">?attr/popupMenuTextColor</item>
