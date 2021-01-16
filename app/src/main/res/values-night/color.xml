@@ -6,6 +6,14 @@
     <color name="secondaryColor">#e1bee7</color>
     <color name="secondaryLightColor">#fff1ff</color>
     <color name="secondaryDarkColor">#af8eb5</color>
-    <color name="primaryTextColor">#00695c</color>
     <color name="secondaryTextColor">#6a1b9a</color>
+
+    <color name="primaryColorPro">#ffecb3</color>
+    <color name="primaryLightColorPro">#ffffe5</color>
+    <color name="primaryDarkColorPro">#cbba83</color>
+    <color name="secondaryColorPro">#e0f2f1</color>
+    <color name="secondaryLightColorPro">#ffffff</color>
+    <color name="secondaryDarkColorPro">#aebfbe</color>
+    <color name="primaryTextColorPro">#000000</color>
+    <color name="secondaryTextColorPro">#000000</color>
 </resources>

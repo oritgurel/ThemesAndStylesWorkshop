@@ -10,7 +10,7 @@
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#f5f5f5</color>
 
-    <!--    Pro theme-->
+    <!--    Pro colors-->
     <color name="primaryColorPro">#ffca28</color>
     <color name="primaryLightColorPro">#fffd61</color>
     <color name="primaryDarkColorPro">#c79a00</color>
