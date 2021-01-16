@@ -5,10 +5,13 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Switch theme</string>
+    <string name="force_dark">Force dark</string>
+    <string name="force_light">Force light</string>
+    <string name="system_default">System default</string>
 
     <string name="menu_health">Health</string>
     <string name="menu_tech">Tech</string>
     <string name="menu_entertainment">Entertainment</string>
     <string name="premium_popup_title">Become Premium</string>
+    <string name="premium_popup_message">"* All hot news \n* Personalized notifications \n* More hot news</string>
 </resources>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="menu_health">Health Pro</string>
+    <string name="premium_popup_title">Woohoo, you\'re premium</string>
+    <string name="premium_popup_message">All features are unlocked!</string>
 </resources>

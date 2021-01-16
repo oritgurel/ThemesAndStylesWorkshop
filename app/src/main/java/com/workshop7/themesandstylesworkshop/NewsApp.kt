@@ -1,11 +1,14 @@
 package com.workshop7.themesandstylesworkshop
 
 import android.app.Application
-import android.content.res.Resources
 
 class NewsApp: Application() {
-
     companion object {
-        var shouldChangeDefaultTheme: Boolean = false
+        var isProTheme: Boolean = false
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        isProTheme = resources.getBoolean(R.bool.isPro)
     }
 }
