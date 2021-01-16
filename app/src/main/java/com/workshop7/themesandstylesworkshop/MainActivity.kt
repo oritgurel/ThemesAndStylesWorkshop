@@ -68,17 +68,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPremiumDialog() {
-        if (isProTheme) return
+        val becomePremiumDialog = !isPro && !isProTheme
         val builder = AlertDialog.Builder(this, R.style.Theme_MaterialComponents_DayNight_Dialog_Alert)
-                .setTitle(R.string.premium_popup_title)
+                .setTitle(if (becomePremiumDialog) R.string.premium_popup_title else R.string.you_are_premium_title)
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
-                    builder.apply {
-                        setPositiveButton("Join") { dialog, _ ->
-                        isProTheme = true
+                    builder.setPositiveButton(if (becomePremiumDialog) R.string.become_premium_positive_btn else R.string.quite_premium_positive_btn) { dialog, _ ->
+                        isProTheme = !isProTheme
                         dialog.dismiss()
                         recreate()
-                        }
                     }
                 }
                 builder.create().show()
