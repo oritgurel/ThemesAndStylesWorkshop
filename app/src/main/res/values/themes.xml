@@ -32,19 +32,19 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- Toolbar -->
+        Theme Overlays
+     Toolbar
     <style name="ToolbarPopupOverlay" parent="">
         <!-- This is a custom attribute we declared:-->
         <item name="android:textColorPrimary">?attr/popupMenuTextColor</item>
     </style>
-
     <!--    empty parent indicates themeOverlay-->
     <style name="MyThemeOverlay_Toolbar" parent="">
         <item name="android:textColorPrimary">@color/colorOnPrimary</item>
     </style>
 
 
-
+    <!--    Required to use toolbar-->
     <style name="Theme.ThemesAndStylesWorkshop.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

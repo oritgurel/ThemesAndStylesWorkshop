@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPremiumDialog() {
         if (isProTheme) return
-        val builder = AlertDialog.Builder(this)
+        val builder = AlertDialog.Builder(this, R.style.Theme_MaterialComponents_DayNight_Dialog_Alert)
                 .setTitle(R.string.premium_popup_title)
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
