@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="isPro" type="bool">false</item>
+    
+    <declare-styleable name="AppTheme">
+        <attr name="popupMenuTextColor" format="color"/>
+    </declare-styleable>
 </resources>

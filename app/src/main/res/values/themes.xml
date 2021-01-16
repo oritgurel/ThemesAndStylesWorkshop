@@ -13,6 +13,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <!--        Custom attr-->
+        <item name="popupMenuTextColor">?attr/colorOnSurface</item>
     </style>
 
     <style name="AppTheme.Pro">
@@ -30,14 +33,17 @@
     </style>
 
     <!-- Toolbar -->
-    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
-        <item name="materialThemeOverlay">@style/MyThemeOverlay_Toolbar</item>
+    <style name="ToolbarPopupOverlay" parent="">
+        <!-- This is a custom attribute we declared:-->
+        <item name="android:textColorPrimary">?attr/popupMenuTextColor</item>
     </style>
 
+    <!--    empty parent indicates themeOverlay-->
     <style name="MyThemeOverlay_Toolbar" parent="">
         <item name="android:textColorPrimary">@color/colorOnPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
     </style>
+
+
 
     <style name="Theme.ThemesAndStylesWorkshop.NoActionBar">
         <item name="windowActionBar">false</item>

@@ -8,6 +8,7 @@
     <color name="secondaryDarkColor">#af8eb5</color>
     <color name="secondaryTextColor">#6a1b9a</color>
 
+    <!--    Pro colors-->
     <color name="primaryColorPro">#ffecb3</color>
     <color name="primaryLightColorPro">#ffffe5</color>
     <color name="primaryDarkColorPro">#cbba83</color>
