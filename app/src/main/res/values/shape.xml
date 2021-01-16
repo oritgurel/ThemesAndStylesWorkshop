@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CardView shape-->
+    <style name="Widget.AppTheme.MaterialCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_MaterialCardView</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_MaterialCardView" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSize">50dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+    </style>
+
+    <!-- Fab shape-->
+    <style name="Widget.AppTheme.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_Fab</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_Fab" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+    <!--    Image shape-->
+    <style name="ShapeAppearanceOverlay_ShapableImageView" parent="ShapeAppearanceOverlay_MaterialCardView">
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>

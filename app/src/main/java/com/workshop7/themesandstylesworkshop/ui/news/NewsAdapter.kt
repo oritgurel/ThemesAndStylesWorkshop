@@ -7,12 +7,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.google.android.material.imageview.ShapeableImageView
 import com.workshop7.network.serviceModel.ArticlesItem
-import com.workshop7.network.serviceModel.DataItem
 import com.workshop7.themesandstylesworkshop.R
 
-class NewsAdapter(news: List<ArticlesItem>): RecyclerView.Adapter<NewsViewHolder>() {
+class NewsAdapter(news: List<ArticlesItem>) : RecyclerView.Adapter<NewsViewHolder>() {
     private val news: MutableList<ArticlesItem> = news.toMutableList()
 
     fun setNews(news: List<ArticlesItem>) {
@@ -24,7 +22,9 @@ class NewsAdapter(news: List<ArticlesItem>): RecyclerView.Adapter<NewsViewHolder
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
-        return NewsViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.li_news, parent, false))
+        return NewsViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.li_news, parent, false)
+        )
     }
 
     override fun getItemCount(): Int {
@@ -36,10 +36,10 @@ class NewsAdapter(news: List<ArticlesItem>): RecyclerView.Adapter<NewsViewHolder
     }
 }
 
-class NewsViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-    val title = itemView.findViewById<TextView>(R.id.li_news_title)
-    val image = itemView.findViewById<ShapeableImageView>(R.id.li_news_image)
-    val desc = itemView.findViewById<TextView>(R.id.li_news_desc)
+class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    private val title = itemView.findViewById<TextView>(R.id.li_news_title)
+    private val image = itemView.findViewById<ImageView>(R.id.li_news_image)
+    private val desc = itemView.findViewById<TextView>(R.id.li_news_desc)
     fun bind(newsItem: ArticlesItem) {
         title.text = newsItem.title
         Glide.with(image.context).load(newsItem.urlToImage).into(image)

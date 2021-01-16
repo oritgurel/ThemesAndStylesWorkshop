@@ -22,6 +22,9 @@
         <item name="textAppearanceHeadline5">@style/TextAppearance.MdcTypographyStyles.Headline5</item>
         <item name="textAppearanceSubtitle2">@style/TextAppearance.MdcTypographyStyles.Subtitle2</item>
         <item name="textAppearanceButton">@style/TextAppearance.MdcTypographyStyles.Button</item>
+        <!-- Shapes-->
+        <item name="materialCardViewStyle">@style/Widget.AppTheme.MaterialCardView</item>
+        <item name="floatingActionButtonStyle">@style/Widget.AppTheme.FAB</item>
     </style>
 
     <style name="AppTheme.Pro">
@@ -48,7 +51,6 @@
     <style name="MyThemeOverlay_Toolbar" parent="">
         <item name="android:textColorPrimary">@color/colorOnPrimary</item>
     </style>
-
 
     <!--    Required to use toolbar-->
     <style name="Theme.ThemesAndStylesWorkshop.NoActionBar">
