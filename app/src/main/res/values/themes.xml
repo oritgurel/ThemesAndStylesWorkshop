@@ -39,11 +39,6 @@
         <item name="colorOnPrimary">@color/colorOnPrimary</item>
     </style>
 
-    <style name="Theme.ThemesAndStylesWorkshop.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

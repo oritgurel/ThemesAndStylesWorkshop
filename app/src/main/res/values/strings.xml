@@ -14,4 +14,7 @@
     <string name="menu_entertainment">Entertainment</string>
     <string name="premium_popup_title">Become Premium</string>
     <string name="premium_popup_message">"* All hot news \n* Personalized notifications \n* More hot news</string>
+    <string name="you_are_premium_title">You\'re premium</string>
+    <string name="become_premium_positive_btn">Join</string>
+    <string name="quite_premium_positive_btn">Quit premium</string>
 </resources>
