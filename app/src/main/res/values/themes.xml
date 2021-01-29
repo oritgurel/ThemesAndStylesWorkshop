@@ -15,18 +15,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <!--TODO STEP 2: Add theme for Pro mode which inherits from "AppTheme" called "AppTheme.Pro" (dot notation inheritance). Use Pro colors from colors.xml, in the same manner of AppTheme. -->
-
     <!-- Toolbar -->
-    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
-        <item name="materialThemeOverlay">@style/MyThemeOverlay_Toolbar</item>
-    </style>
-
-    <style name="MyThemeOverlay_Toolbar" parent="">
-        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
-    </style>
-
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

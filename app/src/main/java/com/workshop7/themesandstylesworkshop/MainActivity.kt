@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         val theme = super.getTheme()
         //we're in free/main flavor
         if (NewsApp.isProTheme) {
-            //TODO STEP 3: apply AppTheme.Pro style to current theme using applyStyle() method. Notice that inheritance dot notation in the name is replaced in code by "_" when calling the style resource id).
         }
         return theme
     }
@@ -71,12 +70,8 @@ class MainActivity : AppCompatActivity() {
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
                     builder.setPositiveButton(if (becomePremiumDialog) R.string.become_premium_positive_btn else R.string.quite_premium_positive_btn) { dialog, _ ->
-                        //TODO STEP 4: nothing to do here, just notice how we switch a static app-level boolean to simulate "in app purchase". When getting the theme, activity checks for this boolean (see our getTheme() override).
                         NewsApp.isProTheme = !NewsApp.isProTheme
                         dialog.dismiss()
-                        //TODO STEP 5: recreate the activity here in order for the different theme to take effect when pressing the positive button.
-                        //TODO STEP 6: Run the app. Press the FAB to present the dialog and check that theme is switched when pressing positive button.
-
                     }
                 }
                 builder.create().show()

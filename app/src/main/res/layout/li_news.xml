@@ -24,7 +24,6 @@
         android:layout_marginTop="16dp"
         tools:text="blablablablabal"
         android:textColor="?attr/colorOnSurface"
-        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintTop_toBottomOf="@id/li_news_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -41,7 +40,6 @@
         android:ellipsize="end"
         android:maxLines="1"
         tools:text="blablablablabal"
-        android:textAppearance="?attr/textAppearanceSubtitle2"
         android:textColor="?attr/colorOnSurface"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +51,6 @@
         android:layout_height="1dp"
         android:background="?attr/colorOnSurface"
         android:layout_marginHorizontal="20dp"
-        style="?attr/dividerVertical"
         app:layout_constraintTop_toBottomOf="@id/li_news_desc"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
