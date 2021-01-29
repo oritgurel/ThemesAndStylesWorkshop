@@ -30,15 +30,6 @@
     </style>
 
     <!-- Toolbar -->
-    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
-        <item name="materialThemeOverlay">@style/MyThemeOverlay_Toolbar</item>
-    </style>
-
-    <style name="MyThemeOverlay_Toolbar" parent="">
-        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
-    </style>
-
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
