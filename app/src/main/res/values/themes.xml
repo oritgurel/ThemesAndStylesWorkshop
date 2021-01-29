@@ -43,10 +43,10 @@
 
 <!--     Theme Overlays-->
 <!--     Toolbar-->
-    <style name="ToolbarPopupOverlay" parent="">
-        <!-- This is a custom attribute we declared:-->
-        <item name="android:textColorPrimary">?attr/popupMenuTextColor</item>
-    </style>
+<!--    <style name="ToolbarPopupOverlay" parent="">-->
+<!--        &lt;!&ndash; This is a custom attribute we declared:&ndash;&gt;-->
+<!--        <item name="android:textColorPrimary">?attr/popupMenuTextColor</item>-->
+<!--    </style>-->
     <!--    empty parent indicates themeOverlay-->
     <style name="MyThemeOverlay_Toolbar" parent="">
         <item name="android:textColorPrimary">@color/colorOnPrimary</item>
@@ -58,7 +58,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar" />
 
-    <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight" />
 </resources>
