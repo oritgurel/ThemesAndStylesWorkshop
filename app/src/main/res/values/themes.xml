@@ -2,31 +2,15 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primaryColor</item>
-        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
-        <item name="colorOnPrimarySurface">@color/primaryTextColor</item>
-        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <!--   TODO STEP 2: set primary brand colors to theme by overriding colorPrimary, colorPrimaryVariant and colorOnPrimary from colors.xml. note to use attributes that supports AppCompat and not android: platform attributes.-->
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/secondaryColor</item>
-        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
-        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!--   TODO STEP 3: set secondary brand colors to theme by overriding colorSecondary, colorSecondaryVariant and colorOnSecondary from colors.xml. note to use attributes that supports AppCompat and not android: platform attributes.-->
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <!--TODO STEP 2: Add theme for Pro mode which inherits from "AppTheme" called "AppTheme.Pro" (dot notation inheritance). Use Pro colors from colors.xml, in the same manner of AppTheme. -->
-
     <!-- Toolbar -->
-    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
-        <item name="materialThemeOverlay">@style/MyThemeOverlay_Toolbar</item>
-    </style>
-
-    <style name="MyThemeOverlay_Toolbar" parent="">
-        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
-        <item name="colorOnPrimary">@color/colorOnPrimary</item>
-    </style>
-
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

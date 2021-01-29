@@ -16,6 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- TODO STEP 5: change the textColor to use theme colorOnSurface in both textViews. when not assigning a background to the view, it uses colorSurface from theme. Therefore the text color should use colorOnSurface. When theme changes, the color will be decided by the declared theme attribute. -->
     <TextView
         android:id="@+id/li_news_title"
         android:layout_width="match_parent"
@@ -23,8 +24,7 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="16dp"
         tools:text="blablablablabal"
-        android:textColor="?attr/colorOnSurface"
-        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#000000"
         app:layout_constraintTop_toBottomOf="@id/li_news_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -41,19 +41,18 @@
         android:ellipsize="end"
         android:maxLines="1"
         tools:text="blablablablabal"
-        android:textAppearance="?attr/textAppearanceSubtitle2"
-        android:textColor="?attr/colorOnSurface"
+        android:textColor="@color/colorOnPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/li_news_title"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <!-- TODO STEP 6: change the background of the divider view to use theme colorOnSurface, to match the textViews text color.-->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="?attr/colorOnSurface"
+        android:background="@color/colorOnPrimary"
         android:layout_marginHorizontal="20dp"
-        style="?attr/dividerVertical"
         app:layout_constraintTop_toBottomOf="@id/li_news_desc"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
