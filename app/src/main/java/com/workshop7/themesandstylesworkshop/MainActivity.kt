@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.ui.*
-import com.workshop7.themesandstylesworkshop.NewsApp.Companion.isProTheme
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,12 +45,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun getTheme(): Resources.Theme {
-        val newTheme = super.getTheme()
+        val theme = super.getTheme()
         //we're in free/main flavor
-        if (isProTheme) {
-            newTheme.applyStyle(R.style.AppTheme_Pro, true)
+        if (NewsApp.isProTheme) {
+            //TODO STEP 3: apply AppTheme.Pro style to current theme using applyStyle() method. Notice that inheritance dot notation in the name is replaced in code by "_" when calling the style resource id).
         }
-        return newTheme
+        return theme
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -66,15 +65,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPremiumDialog() {
-        val becomePremiumDialog = !isPro && !isProTheme
+        val becomePremiumDialog = !isPro && !NewsApp.isProTheme
         val builder = AlertDialog.Builder(this, R.style.Theme_MaterialComponents_DayNight_Dialog_Alert)
                 .setTitle(if (becomePremiumDialog) R.string.premium_popup_title else R.string.you_are_premium_title)
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
                     builder.setPositiveButton(if (becomePremiumDialog) R.string.become_premium_positive_btn else R.string.quite_premium_positive_btn) { dialog, _ ->
-                        isProTheme = !isProTheme
+                        //TODO STEP 4: nothing to do here, just notice how we switch a static app-level boolean to simulate "in app purchase". When getting the theme, activity checks for this boolean (see our getTheme() override).
+                        NewsApp.isProTheme = !NewsApp.isProTheme
                         dialog.dismiss()
-                        recreate()
+                        //TODO STEP 5: recreate the activity here in order for the different theme to take effect when pressing the positive button.
+                        //TODO STEP 6: Run the app. Press the FAB to present the dialog and check that theme is switched when pressing positive button.
+
                     }
                 }
                 builder.create().show()

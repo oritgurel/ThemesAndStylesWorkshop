@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--    Primary Theme colors-->
     <color name="primaryColor">#80cbc4</color>
     <color name="primaryLightColor">#b2fef7</color>
     <color name="primaryDarkColor">#4f9a94</color>
@@ -10,6 +11,7 @@
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#f5f5f5</color>
 
+    <!--    TODO STEP 1: For Pro theme, You may either use this provided color scheme, or export your own color.xml at: https://material.io/resources/color/#!/?view.left=0iew.right=0 and add it here. don't forget to alter the color names with Pro suffix.-->
     <!--    Pro colors-->
     <color name="primaryColorPro">#ffca28</color>
     <color name="primaryLightColorPro">#fffd61</color>
@@ -20,3 +22,5 @@
     <color name="primaryTextColorPro">#5d4037</color>
     <color name="secondaryTextColorPro">#000000</color>
 </resources>
+
+<!--TODO STEP 7 [BONUS]: To use these Pro colors for Pro app flavor, go to: ${projectRoot}/app/src/pro/res/values and add color.xml with pro colors, under Primary Theme colors names. go to build variants and choose "ProDebug", run the app and check it has the pro colors. This is handy when app has a paid download version (as opposed to in app purchase). -->
