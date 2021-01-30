@@ -13,8 +13,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    <!--TODO STEP 2a: add custom attr. "IapDialogBackground" we just created here and set its value to "@color/primaryColorPro"-->
-    <!--TODO STEP 2b: add custom attr. "IapDialogBackground" we just created here and set its value to "@color/primaryColor"-->
         <item name="IapDialogBackgroundTint">@color/primaryColorPro</item>
         <item name="IapDialogBtnTint">@color/primaryColor</item>
     </style>
@@ -31,19 +29,14 @@
         <item name="colorSecondaryVariant">@color/secondaryDarkColorPro</item>
         <item name="colorOnSecondary">@color/secondaryTextColorPro</item>
         <!-- Customize your theme here. -->
-        <!--TODO STEP 3a: add custom attr. "IapDialogBackgroundTint" here and set its value to "@color/primaryColor"-->
-        <!--TODO STEP 3b: add custom attr. "IapDialogBtnTint" here and set its value to "@color/primaryColorPro"-->
         <item name="IapDialogBackgroundTint">@color/primaryColor</item>
         <item name="IapDialogBtnTint">@color/primaryColorPro</item>
     </style>
 
-    <!--TODO STEP 4: create theme overlay for IapDialog called "IapDialogOverlay". Add one attribute to it - android:backgroundTint, and set its value to be our new custom attr. "IapDialogBtnTint" from the theme."-->
     <style name="IapDialogOverlay" parent="">
         <item name="android:backgroundTint">?attr/IapDialogBtnTint</item>
     </style>
 
-    <!--TODO STEP 5a: create a special dialog style called "AppTheme.IapDialogStyle" which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert. Add one attribute to it: "materialThemeOverlay" and set its value to our newly created "IapDialogOverlay".-->
-    <!--TODO STEP 5b: Add a second attribute to it: "colorSurface" and set its value to "IapDialogBackgroundTint" from our theme.-->
     <style name="AppTheme.IapDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
         <item name="colorSurface">?attr/IapDialogBackgroundTint</item>
         <item name="materialThemeOverlay">@style/IapDialogOverlay</item>
