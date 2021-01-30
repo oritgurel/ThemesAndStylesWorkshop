@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.ui.*
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.workshop7.themesandstylesworkshop.NewsApp.Companion.isProTheme
 
 class MainActivity : AppCompatActivity() {
@@ -67,7 +68,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPremiumDialog() {
         val becomePremiumDialog = !isPro && !isProTheme
-        val builder = AlertDialog.Builder(this, R.style.Theme_MaterialComponents_DayNight_Dialog_Alert)
+        //TODO STEP 6: Add to this AlertDialog.Builder's constructor the new "AppTheme.IapDialogTheme" theme. Don't forget to replace the inheritance dot notation to "_" in res id.
+        val builder = MaterialAlertDialogBuilder(this, R.style.AppTheme_IapDialogTheme)
                 .setTitle(if (becomePremiumDialog) R.string.premium_popup_title else R.string.you_are_premium_title)
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
