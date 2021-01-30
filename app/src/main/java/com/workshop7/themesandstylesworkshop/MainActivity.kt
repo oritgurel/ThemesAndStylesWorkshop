@@ -81,4 +81,5 @@ class MainActivity : AppCompatActivity() {
                 }
                 builder.create().show()
     }
+    //TODO STEP 7: Run the app, open the dialog through the FAB and notice the changes.
 }
