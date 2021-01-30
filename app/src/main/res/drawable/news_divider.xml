@@ -2,8 +2,6 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:left="30dp" android:right="30dp">
         <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
-            <!--TODO STEP 5: Nothing to do here, notice how we use theme's colorSecondary for the divider. It will change according to the theme.  -->
-            <!--TODO STEP 6: Run the app and switch themes. see how our new divider reacts to theme changes. -->
             <solid android:color="?attr/colorSecondary"/>
             <size android:width="1dp" android:height="2dp"/>
             <corners android:radius="10dp"/>
