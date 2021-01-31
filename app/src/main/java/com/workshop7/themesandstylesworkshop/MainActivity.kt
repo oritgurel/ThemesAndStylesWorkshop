@@ -3,12 +3,14 @@ package com.workshop7.themesandstylesworkshop
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.ui.*
@@ -80,4 +82,17 @@ class MainActivity : AppCompatActivity() {
                 }
                 builder.create().show()
     }
+
+    //TODO STEP 1: override onOptionsItemSelected and Implement toolbar menu options for dark/light mode using AppCompatDelegate methods.
+    //TODO STEP 2: Run the app, notice the changes. some of the colors (like colorSurface and colorOnSurface) changes automatically. Let's fine-tune it further.
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.force_dark -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            R.id.force_light -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            R.id.system_default -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+            else -> return super.onOptionsItemSelected(item)
+        }
+        return true
+    }
+
 }
