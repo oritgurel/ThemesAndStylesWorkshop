@@ -1,5 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+    <!--TODO STEP 2: Change parent of "AppTheme" theme from DayNight to Light    -->
+    <!--TODO STEP 3: Add attribute to the theme that will allow force dark mode (supported from Android 10 (sdk 29)). This will invert the colors automatically by the system. Run the App, switch to dark theme and checkout the changes.-->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
@@ -19,6 +21,7 @@
         <item name="textAppearanceSubtitle2">@style/TextAppearance.MdcTypographyStyles.Subtitle2</item>
         <item name="android:listDivider">@drawable/news_divider</item>
         <item name="materialCardViewStyle">@style/Widget.AppTheme.MaterialCardView</item>
+<!--        <item name="android:forceDarkAllowed" tools:targetApi="q">true</item>-->
     </style>
 
     <style name="AppTheme.Pro">
@@ -42,18 +45,18 @@
         <item name="colorOnSurface">?attr/colorOnPrimary</item>
     </style>
 
-    <!--TODO STEP 7: Change "AppTheme.IapDialogTheme" parent's theme so the text color will fit both dark and light mode -->
+    <!--TODO STEP 9: Change "AppTheme.IapDialogTheme" parent's theme so the text color will fit both dark and light mode -->
     <style name="AppTheme.IapDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
         <item name="colorSurface">?attr/IapDialogBackgroundTint</item>
         <item name="materialThemeOverlay">@style/IapDialogOverlay</item>
     </style>
-    <!--TODO STEP 8: Congrats! You have completed your themed controlled app! feel free to take it from here and customize your theme further.    -->
+    <!--TODO STEP 10: Congrats! You have completed your themed controlled app! feel free to take it from here and customize your theme further.    -->
 
-    <!-- TODO STEP 6: Run the app and check your changes. Adjust toolbar's AppBarOverlay theme parent to make its text color look good on both modes (*clue: Light)-->
+    <!-- TODO STEP 8: Run the app and check your changes. Adjust toolbar's AppBarOverlay theme parent to make its text color look good on both modes (*clue: Light)-->
     <!-- Toolbar -->
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-    <!-- TODO STEP 3: Checkout the setting menu when switching dark/light. Change the toolbar PopupOverlay style parent to make it adjust automatically to the dark/light theme change. (the first one is for the actionbar, the second one is for the settings menu of the toolbar). *clue: DayNight.   -->
+    <!-- TODO STEP 5: Checkout the setting menu when switching dark/light. Change the toolbar PopupOverlay style parent to make it adjust automatically to the dark/light theme change. (the first one is for the actionbar, the second one is for the settings menu of the toolbar). *clue: DayNight.   -->
     <style name="Theme.ThemesAndStylesWorkshop.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight" />
-    <!-- TODO STEP 4: To further adjust and customise our dark theme, right click on res folder -> new ->  Android Resource File -> create a new Values resource file named colors.xml with night-mode qualifier. The file will be created inside values-night directory.-->
-    <!-- TODO STEP 5: Copy your primary and secondary colors (no need for text colors) from main values/colors.xml into values-night/colors.xml. Now, change the primary's and secondary's color values to use a less saturated shade. Use Material color tool - For example, if your "Day" color is on the 300 column, change it to its neighbor on 100 column. https://material.io/resources/color/#!/?view.left=0iew.right%3D0  -->
+    <!-- TODO STEP 6: To further adjust and customise our dark theme, right click on res folder -> new ->  Android Resource File -> create a new Values resource file named colors.xml with night-mode qualifier. The file will be created inside values-night directory.-->
+    <!-- TODO STEP 7: Copy your primary and secondary colors (no need for text colors) from main values/colors.xml into values-night/colors.xml. Now, change the primary's and secondary's color values to use a less saturated shade. Use Material color tool - For example, if your "Day" color is on the 300 column, change it to its neighbor on 100 column. https://material.io/resources/color/#!/?view.left=0iew.right%3D0  -->
 </resources>
