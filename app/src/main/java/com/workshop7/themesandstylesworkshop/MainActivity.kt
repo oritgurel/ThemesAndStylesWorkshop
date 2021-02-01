@@ -3,7 +3,6 @@ package com.workshop7.themesandstylesworkshop
 import android.content.res.Resources
 import android.os.Bundle
 import android.view.Menu
-import androidx.appcompat.app.AlertDialog
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -80,4 +79,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 builder.create().show()
     }
+
+    //TODO STEP 1: override onOptionsItemSelected and Implement toolbar menu options for dark/light mode using AppCompatDelegate methods.
+    //TODO STEP 2: Run the app, and notice the changes when switching to dark mode. some of the colors (like colorSurface and colorOnSurface) changes automatically. Let's fine-tune it further.
 }
