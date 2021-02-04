@@ -8,6 +8,8 @@
         <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
         <item name="colorOnPrimary">@color/primaryTextColor</item>
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <item name="colorSurface">@color/colorSurface</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondaryColor</item>
         <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
@@ -31,6 +33,8 @@
         <item name="colorOnPrimary">@color/primaryTextColorPro</item>
         <item name="colorOnPrimarySurface">@color/primaryTextColorPro</item>
         <item name="android:textColorPrimary">@color/primaryTextColorPro</item>
+        <item name="backgroundColor">@color/backgroundColorPro</item>
+        <item name="colorSurface">@color/colorSurfacePro</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/secondaryColorPro</item>
         <item name="colorSecondaryVariant">@color/secondaryDarkColorPro</item>

@@ -9,6 +9,8 @@
     <color name="secondaryDarkColor">#883997</color>
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#f5f5f5</color>
+    <color name="backgroundColor">#aec4c7</color>
+    <color name="colorSurface">#e0f7fa</color>
 
     <!--    Pro colors-->
     <color name="primaryColorPro">#ffca28</color>
@@ -19,4 +21,6 @@
     <color name="secondaryDarkColorPro">#4f9a94</color>
     <color name="primaryTextColorPro">#5d4037</color>
     <color name="secondaryTextColorPro">#000000</color>
+    <color name="backgroundColorPro">#fff8e1</color>
+    <color name="colorSurfacePro">#ffecb3</color>
 </resources>
