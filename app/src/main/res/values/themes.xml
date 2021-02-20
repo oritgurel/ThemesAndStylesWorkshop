@@ -38,6 +38,7 @@
     </style>
 
     <!--TODO STEP 4: create theme overlay for IapDialog called "IapDialogOverlay". Add one attribute to it - android:backgroundTint, and set its value to be our new custom attr. "IapDialogBtnTint" from the theme."-->
+    <!--TODO STEP 4a: [notice, button style is borderless, so we use backgroundTint to change its background]-->
     <style name="IapDialogOverlay" parent="">
         <item name="android:backgroundTint">?attr/IapDialogBtnTint</item>
     </style>
