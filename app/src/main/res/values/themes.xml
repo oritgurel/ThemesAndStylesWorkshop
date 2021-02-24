@@ -13,8 +13,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    <!--TODO STEP 2a: add custom attr. "IapDialogBackground" we just created here and set its value to "@color/primaryColorPro"-->
-    <!--TODO STEP 2b: add custom attr. "IapDialogBackground" we just created here and set its value to "@color/primaryColor"-->
+    <!--TODO STEP 2a: add custom attr. "IapDialogBackgroundTint" we just created here and set its value to "@color/primaryColorPro"-->
+    <!--TODO STEP 2b: add custom attr. "IapDialogBtnTint" we just created here and set its value to "@color/primaryColor"-->
     </style>
 
     <style name="AppTheme.Pro">
