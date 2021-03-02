@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--TODO STEP 7: Wrap this layout with a MaterialCardView component. set 16dp margin to it, and also add app:cardPreventCornerOverlap="false" -->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_margin="16dp"
+    app:cardPreventCornerOverlap="false">
 
-    <!--TODO STEP 8: Remove li_news_image margin for its corners to align with the cardView's. -->
-    <!--TODO STEP 9: Create values resource file shape.xml at res/values/-->
-    <!--TODO STEP 10: In shape.xml, Declare a style overlay called ShapeAppearanceOverlay_cardView. Customise attr: cornerFamily and cornerSize for various corners.-->
-    <!--TODO STEP 11: Create a style "Widget.AppTheme.MaterialCardView which inherits from "Widget.MaterialComponent.CardView". Give it one attribute: "shapeAppearanceOverlay" and set its value to our newly created card shape overlay.-->
-    <!--TODO STEP 15: Set the ImageView shapeAppearanceOverly directly to this ShapeableImageView using app:shapeAppearanceOverlay attr. Run the app - see our item shape now. -->
-    <!--TODO STEP 16 [Bonus]: Customise our FAB button shape - Add to our theme a shape overlay attribute for FAB button, following same steps we did with cardView.-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--TODO STEP 6: Create values resource file shape.xml at res/values/-->
+    <!--TODO STEP 7: In shape.xml, Declare a style overlay called ShapeAppearanceOverlay_cardView. Set attributes for it: cornerFamily and cornerSize for various corners.-->
+    <!--TODO STEP 8: Create a style "Widget.AppTheme.MaterialCardView which inherits from "Widget.MaterialComponent.CardView". Give it one attribute: "shapeAppearanceOverlay" and set its value to our newly created card shape overlay.-->
+    <!--TODO STEP 12: Set the ImageView shapeAppearanceOverly directly to this ShapeableImageView using app:shapeAppearanceOverlay attr. Run the app - see our item shape now. -->
+    <!--TODO STEP 13 [Bonus]: Customise our FAB button shape - Add to our theme a shape overlay attribute for FAB button, following same steps we did with cardView.-->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/li_news_image"
         android:layout_width="match_parent"
@@ -63,4 +66,5 @@
         app:layout_constraintTop_toBottomOf="@id/li_news_desc"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
