@@ -10,6 +10,8 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- TODO STEP 10: Add theme for Pro mode which inherits from "AppTheme" called "AppTheme.Pro" (dot notation inheritance). Use Pro colors from colors.xml, in the same manner of AppTheme. -->
+
     <!-- Toolbar -->
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
