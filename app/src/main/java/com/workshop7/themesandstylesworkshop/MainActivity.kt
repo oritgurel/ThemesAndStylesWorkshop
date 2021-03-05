@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.ui.*
+import com.workshop7.themesandstylesworkshop.NewsApp.Companion.isProTheme
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,11 +46,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun getTheme(): Resources.Theme {
-        val theme = super.getTheme()
+        val newTheme = super.getTheme()
         //we're in free/main flavor
-        if (NewsApp.isProTheme) {
+        if (isProTheme) {
+            newTheme.applyStyle(R.style.AppTheme_Pro, true)
         }
-        return theme
+        return newTheme
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -64,14 +66,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPremiumDialog() {
-        val becomePremiumDialog = !isPro && !NewsApp.isProTheme
+        val becomePremiumDialog = !isPro && !isProTheme
         val builder = AlertDialog.Builder(this, R.style.Theme_MaterialComponents_DayNight_Dialog_Alert)
                 .setTitle(if (becomePremiumDialog) R.string.premium_popup_title else R.string.you_are_premium_title)
                 .setMessage(R.string.premium_popup_message)
                 if (!isPro) {
                     builder.setPositiveButton(if (becomePremiumDialog) R.string.become_premium_positive_btn else R.string.quite_premium_positive_btn) { dialog, _ ->
-                        NewsApp.isProTheme = !NewsApp.isProTheme
+                        isProTheme = !isProTheme
                         dialog.dismiss()
+                        recreate()
                     }
                 }
                 builder.create().show()

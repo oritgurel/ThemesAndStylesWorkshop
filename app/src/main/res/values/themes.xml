@@ -15,6 +15,20 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme.Pro">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColorPro</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColorPro</item>
+        <item name="colorOnPrimary">@color/primaryTextColorPro</item>
+        <item name="colorOnPrimarySurface">@color/primaryTextColorPro</item>
+        <item name="android:textColorPrimary">@color/primaryTextColorPro</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColorPro</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColorPro</item>
+        <item name="colorOnSecondary">@color/secondaryTextColorPro</item>
+        <!-- Customize your theme here. -->
+    </style>
+
     <!-- Toolbar -->
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
