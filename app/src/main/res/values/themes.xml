@@ -13,8 +13,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-    <!--TODO STEP 2a: add custom attr. "IapDialogBackgroundTint" we just created here and set its value to "@color/primaryColorPro"-->
-    <!--TODO STEP 2b: add custom attr. "IapDialogBtnTint" we just created here and set its value to "@color/primaryColor"-->
+    <!--TODO STEP 3: add custom attr. "IapDialogBackgroundTint" we just created here and set its value to "@color/primaryColorPro"-->
+    <!--TODO STEP 4: add custom attr. "IapDialogBtnTint" we just created here and set its value to "@color/primaryColor"-->
     </style>
 
     <style name="AppTheme.Pro">
@@ -29,21 +29,21 @@
         <item name="colorSecondaryVariant">@color/secondaryDarkColorPro</item>
         <item name="colorOnSecondary">@color/secondaryTextColorPro</item>
         <!-- Customize your theme here. -->
-        <!--TODO STEP 3a: add custom attr. "IapDialogBackgroundTint" here and set its value to "@color/primaryColor"-->
-        <!--TODO STEP 3b: add custom attr. "IapDialogBtnTint" here and set its value to "@color/primaryColorPro"-->
+        <!--TODO STEP 5: add custom attr. "IapDialogBackgroundTint" here and set its value to "@color/primaryColor"-->
+        <!--TODO STEP 6: add custom attr. "IapDialogBtnTint" here and set its value to "@color/primaryColorPro"-->
     </style>
 
-    <!--TODO STEP 4: create theme overlay for IapDialog called "IapDialogOverlay".
+    <!--TODO STEP 7: create theme overlay for IapDialog called "IapDialogOverlay".
                     Add one attribute to it - android:backgroundTint, and set its value to be
                     our new custom attr. "IapDialogBtnTint" from the theme.-->
-    <!--TODO STEP 4a: [notice, button style is borderless, so we use backgroundTint to change its background]-->
+    <!--TODO STEP 8: [notice, button style is borderless, so we use backgroundTint to change its background]-->
 
-    <!--TODO STEP 5a: create a special dialog theme called "AppTheme.IapDialogTheme"
+    <!--TODO STEP 9: create a special dialog theme called "AppTheme.IapDialogTheme"
                 which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert.
                 Add attribute to it: "materialThemeOverlay" and set its value to be
                 our newly created "IapDialogOverlay".-->
 
-    <!--TODO STEP 5b: Add a second attribute to "AppTheme.IapDialogTheme":
+    <!--TODO STEP 10: Add a second attribute to "AppTheme.IapDialogTheme":
             "colorSurface", and set its value to "IapDialogBackgroundTint" from our theme.-->
 
     <!-- Toolbar -->

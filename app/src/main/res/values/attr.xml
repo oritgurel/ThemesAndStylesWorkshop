@@ -2,6 +2,6 @@
 <resources>
     <item name="isPro" type="bool">false</item>
     <!--TODO Step 0: Run the app and click the FAB btn. Notice the look of the dialog. We are going to make it more interesting.    -->
-    <!--TODO Step 1a: Declare a custom attribute for "AppTheme" called "IapDialogBtnTint" of type color.-->
-    <!--TODO step 1b Declare another custom attribute called "IapDialogBtnTint of type color->-->
+    <!--TODO Step 1: Declare a custom attribute for "AppTheme" called "IapDialogBtnTint" of type color.-->
+    <!--TODO step 2: Declare another custom attribute called "IapDialogBtnTint of type color->-->
 </resources>
