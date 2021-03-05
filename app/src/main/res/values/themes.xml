@@ -15,11 +15,11 @@
         <!-- Customize your theme here. -->
         <item name="IapDialogBackgroundTint">@color/primaryColorPro</item>
         <item name="IapDialogBtnTint">@color/primaryColor</item>
-        <!--TODO STEP 7: set theme's textAppearanceHeadline6 attr. to use the equivalent style from type.xml-->
+        <!--TODO STEP 5: set theme's textAppearanceHeadline6 attr. to use the equivalent style from type.xml-->
         <item name="textAppearanceHeadline6">@style/TextAppearance.MdcTypographyStyles.Headline6</item>
-        <!--TODO STEP 8: set theme's textAppearanceSubtitle2 attr. to use the equivalent style from type.xml-->
+        <!--TODO STEP 6: set theme's textAppearanceSubtitle2 attr. to use the equivalent style from type.xml-->
         <item name="textAppearanceSubtitle2">@style/TextAppearance.MdcTypographyStyles.Subtitle2</item>
-        <!-- TODO STEP 9: Run the project and check out the updated fonts-->
+        <!-- TODO STEP 7: Run the project and check out the updated fonts-->
     </style>
 
     <style name="AppTheme.Pro">
