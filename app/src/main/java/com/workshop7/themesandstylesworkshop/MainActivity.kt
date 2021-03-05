@@ -68,7 +68,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPremiumDialog() {
         val becomePremiumDialog = !isPro && !isProTheme
-        //TODO STEP 6: change this AlertDialog.Builder's constructor theme to the new "AppTheme.IapDialogTheme" theme. Don't forget to replace the inheritance dot notation to "_" in res id.
+        //TODO STEP 6: change this AlertDialog.Builder's constructor theme to the new "AppTheme.IapDialogTheme" theme.
+        // Don't forget to replace the inheritance dot notation to "_" in res id.
         val builder = MaterialAlertDialogBuilder(this, R.style.ThemeOverlay_MaterialComponents_Dialog_Alert)
                 .setTitle(if (becomePremiumDialog) R.string.premium_popup_title else R.string.you_are_premium_title)
                 .setMessage(R.string.premium_popup_message)

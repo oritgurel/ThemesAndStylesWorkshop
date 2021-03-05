@@ -33,11 +33,18 @@
         <!--TODO STEP 3b: add custom attr. "IapDialogBtnTint" here and set its value to "@color/primaryColorPro"-->
     </style>
 
-    <!--TODO STEP 4: create theme overlay for IapDialog called "IapDialogOverlay". Add one attribute to it - android:backgroundTint, and set its value to be our new custom attr. "IapDialogBtnTint" from the theme."-->
+    <!--TODO STEP 4: create theme overlay for IapDialog called "IapDialogOverlay".
+                    Add one attribute to it - android:backgroundTint, and set its value to be
+                    our new custom attr. "IapDialogBtnTint" from the theme.-->
     <!--TODO STEP 4a: [notice, button style is borderless, so we use backgroundTint to change its background]-->
 
-    <!--TODO STEP 5a: create a special dialog theme called "AppTheme.IapDialogTheme" which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert. Add attribute to it: "materialThemeOverlay" and set its value to our newly created "IapDialogOverlay".-->
-    <!--TODO STEP 5b: Add a second attribute to it: "colorSurface" and set its value to "IapDialogBackgroundTint" from our theme.-->
+    <!--TODO STEP 5a: create a special dialog theme called "AppTheme.IapDialogTheme"
+                which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert.
+                Add attribute to it: "materialThemeOverlay" and set its value to be
+                our newly created "IapDialogOverlay".-->
+
+    <!--TODO STEP 5b: Add a second attribute to "AppTheme.IapDialogTheme":
+            "colorSurface", and set its value to "IapDialogBackgroundTint" from our theme.-->
 
     <!-- Toolbar -->
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
