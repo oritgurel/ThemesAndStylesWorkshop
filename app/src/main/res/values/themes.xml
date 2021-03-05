@@ -50,7 +50,6 @@
         <item name="materialThemeOverlay">@style/IapDialogOverlay</item>
     </style>
 
-    <style name="text" parent="Widget.AppCompat.TextView" </style>
     <!-- Toolbar -->
     <style name="Theme.ThemesAndStylesWorkshop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
