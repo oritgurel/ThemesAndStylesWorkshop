@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="isPro" type="bool">false</item>
-    <!--TODO Step 1a: Declare a custom attribute for "AppTheme" called "IapDialogBtnTint" of type color.-->
-    <!--TODO step 1b Declare another custom attribute called "IapDialogBtnTint of type color->-->
+    <!--TODO Step 1: Declare a custom attribute for "AppTheme" called "IapDialogBtnTint" of type color.-->
+    <!--TODO step 2: Declare another custom attribute called "IapDialogBtnTint of type color->-->
     <declare-styleable name="AppTheme">
         <attr name="IapDialogBackgroundTint" format="color"/>
         <attr name="IapDialogBtnTint" format="color"/>
