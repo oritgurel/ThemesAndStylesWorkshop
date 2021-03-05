@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--TODO STEP 3: observe
+    In this file, there are textAppearance styles that were generated
+    using the type tool [@link https://material.io/design/typography/the-type-system.html#type-scale].
+    selecting fonts for Headlines & Subtitles.-->
+<!--TODO STEP 4: get missing fonts
+    In LayoutEditor -> Design tab, click on a textView,
+    In right attributes -> select fontFamily -> more fonts ->
+    search for the missing google fonts in this file (two fonts) and mark "downloadable fonts",
+    click ok to add those fonts to the project
+    (see https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts#via-android-studio for more details)-->
+        <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">77sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">48sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">38sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">27sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">19sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">13sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+            <item name="fontFamily">@font/sancreek</item>
+            <item name="android:fontFamily">@font/sancreek</item>
+            <item name="android:textSize">11sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Body1" parent="TextAppearance.MaterialComponents.Body1">
+            <item name="fontFamily">@font/open_sans</item>
+            <item name="android:fontFamily">@font/open_sans</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Body2" parent="TextAppearance.MaterialComponents.Body2">
+            <item name="fontFamily">@font/open_sans</item>
+            <item name="android:fontFamily">@font/open_sans</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Button" parent="TextAppearance.MaterialComponents.Button">
+            <item name="fontFamily">@font/open_sans</item>
+            <item name="android:fontFamily">@font/open_sans</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Caption" parent="TextAppearance.MaterialComponents.Caption">
+            <item name="fontFamily">@font/open_sans</item>
+            <item name="android:fontFamily">@font/open_sans</item>
+            <item name="android:textSize">12sp</item>
+        </style>
+        <style name="TextAppearance.MdcTypographyStyles.Overline" parent="TextAppearance.MaterialComponents.Overline">
+            <item name="fontFamily">@font/open_sans</item>
+            <item name="android:fontFamily">@font/open_sans</item>
+            <item name="android:textSize">10sp</item>
+        </style>
+</resources>

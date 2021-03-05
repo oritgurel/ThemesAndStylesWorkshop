@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--TODO STEP 1: add theme's textAppearance of type Headline6 to li_news_title-->
+    <!--TODO STEP 1: add theme's textAppearance of type Headline6 to li_news_title
+        It is recommended to apply the theme's textAppearance to all of our texts to keep the styling consistent.-->
 
     <TextView
         android:id="@+id/li_news_title"
@@ -58,8 +59,3 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--TODO STEP 3: Run the app, see our theme's default textAppearance. It is recommended to apply the theme's textAppearance to all of our texts to keep the styling consistent. -->
-<!--TODO STEP 4: Create new values resource file in res/values/ called type.xml -->
-<!--TODO STEP 5: Go to https://material.io/design/typography/the-type-system.html#type-scale. Use the type tool so select new fonts for Headlines & Subtitles. In Code tab, copy the generated xml styles file and paste it to: res/values/type.xml -->
-<!--TODO STEP 6: In LayoutEditor -> Design tab, click on a textView, In right attributes -> select fontFamily -> more fonts -> search for the google fonts you chose and mark "downloadable fonts", click ok to add those fonts to the project (see https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts#via-android-studio for more details)-->
