@@ -27,7 +27,6 @@ class NewsFragment : Fragment() {
                 ViewModelProvider(this).get(NewsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_news, container, false)
         val recyclerview = root.findViewById<RecyclerView>(R.id.news_recyclerview)
-        //TODO STEP 2: add item decoration to the recyclerview of type DividerItemDecoration()
         recyclerview.addItemDecoration(DividerItemDecoration(recyclerview.context, LinearLayout.VERTICAL))
         newsViewModel.newsData(findNavController().currentDestination?.id!!).observe(viewLifecycleOwner, Observer {
             if (recyclerview.adapter == null) {
