@@ -43,11 +43,11 @@
         <item name="android:backgroundTint">?attr/IapDialogBtnTint</item>
     </style>
 
-    <!--TODO STEP 5a: create a special dialog style called "AppTheme.IapDialogStyle" which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert. Add one attribute to it: "materialThemeOverlay" and set its value to our newly created "IapDialogOverlay".-->
+    <!--TODO STEP 5a: create a special dialog style called "AppTheme.IapDialogTheme" which inherits from "Theme.MaterialComponents.DayNight.Dialog.Alert. Add one attribute to it: "materialThemeOverlay" and set its value to our newly created "IapDialogOverlay".-->
     <!--TODO STEP 5b: Add a second attribute to it: "colorSurface" and set its value to "IapDialogBackgroundTint" from our theme.-->
     <style name="AppTheme.IapDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
-        <item name="colorSurface">?attr/IapDialogBackgroundTint</item>
         <item name="materialThemeOverlay">@style/IapDialogOverlay</item>
+        <item name="colorSurface">?attr/IapDialogBackgroundTint</item>
     </style>
 
     <!-- Toolbar -->
