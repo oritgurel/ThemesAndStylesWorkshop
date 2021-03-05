@@ -11,7 +11,8 @@
         android:layout_height="wrap_content"
         android:theme="@style/Theme.ThemesAndStylesWorkshop.AppBarOverlay">
 
-    <!-- TODO STEP 7: nothing to do here, just notice how the activity's toolbar color is set to colorPrimary of the used theme by using ?attr/.       -->
+    <!-- TODO STEP 7: nothing to do here, just notice how the activity's toolbar color
+            is set to colorPrimary of the used theme by using ?attr/.       -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
