@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--TODO STEP 1: add theme's textAppearance of type Headline6 to li_news_title
-        It is recommended to apply the theme's textAppearance to all of our texts to keep the styling consistent.-->
+            It is recommended to apply the theme's textAppearance to all of our texts to keep the styling consistent.-->
 
     <TextView
         android:id="@+id/li_news_title"

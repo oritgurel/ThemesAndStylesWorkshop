@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--TODO STEP 3: observe
-    In this file, there are textAppearance styles that were generated
-    using the type tool [@link https://material.io/design/typography/the-type-system.html#type-scale].
-    selecting fonts for Headlines & Subtitles.-->
+<!--TODO STEP 3: Observe: in this file, there are textAppearance styles that were generated
+        using the type tool [@link https://material.io/design/typography/the-type-system.html#type-scale].
+        selecting fonts for Headlines & Subtitles.-->
+
 <!--TODO STEP 4: get missing fonts
-    In LayoutEditor -> Design tab, click on a textView,
-    In right attributes -> select fontFamily -> more fonts ->
-    search for the missing google fonts in this file (two fonts) and mark "downloadable fonts",
-    click ok to add those fonts to the project
-    (see https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts#via-android-studio for more details)-->
+        In LayoutEditor -> Design tab, click on a textView,
+        In right attributes -> select fontFamily -> more fonts ->
+        search for the missing google fonts in this file (two fonts) and mark "downloadable fonts",
+        click ok to add those fonts to the project
+        (see https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts#via-android-studio for more details)-->
         <style name="TextAppearance.MdcTypographyStyles.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
             <item name="fontFamily">@font/sancreek</item>
             <item name="android:fontFamily">@font/sancreek</item>
