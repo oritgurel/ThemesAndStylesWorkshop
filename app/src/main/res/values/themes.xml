@@ -17,10 +17,10 @@
         <item name="IapDialogBtnTint">@color/primaryColor</item>
         <item name="textAppearanceHeadline6">@style/TextAppearance.MdcTypographyStyles.Headline6</item>
         <item name="textAppearanceSubtitle2">@style/TextAppearance.MdcTypographyStyles.Subtitle2</item>
-        <!--TODO STEP 3: set news_divider drawable to be our theme's list divider using attr. "android:listDivider"-->
-        <!--TODO STEP 9: declare "materialCardViewStyle" theme attribute and set its value to our new cardView Widget style-->
-        <!--TODO STEP 10: Run the app and see how our cardView changes its shape. Now have to set a shapeOverlay to the image as well so it would match the cardview shape. -->
-        <!--TODO STEP 11: In shape.xml, create a shapeAppearanceOverlay for image view which inherits the one we created for the cardview. set only its bottom corners radius to 0dp.-->
+        <item name="android:listDivider">@drawable/news_divider</item>
+        <!--TODO STEP 4: declare "materialCardViewStyle" theme attribute and set its value to our new cardView Widget style-->
+        <!--TODO STEP 5: Run the app and see how our cardView changes its shape. Now have to set a shapeOverlay to the image as well so it would match the cardview shape. -->
+        <!--TODO STEP 6: In shape.xml, create a shapeAppearanceOverlay for image view which inherits the one we created for the cardview. set only its bottom corners radius to 0dp.-->
     </style>
 
     <style name="AppTheme.Pro">
