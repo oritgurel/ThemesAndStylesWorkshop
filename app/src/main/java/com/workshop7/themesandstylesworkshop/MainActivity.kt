@@ -81,5 +81,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     //TODO STEP 1: override onOptionsItemSelected and Implement toolbar menu options for dark/light mode using AppCompatDelegate methods.
-    //TODO STEP 4: REVERT steps 2 and 3 (set theme's parent back to DayNight). Run the app, and notice the changes when switching to dark mode. some of the colors (like colorSurface and colorOnSurface) changes automatically. Let's fine-tune it further.
+
+    //TODO STEP 4: REVERT steps 2 and 3 (set theme's parent back to DayNight).
+    //  Run the app, and notice the changes when switching to dark mode.
+    //  Some of the colors (like colorSurface and colorOnSurface) changes automatically. Let's fine-tune it further.
 }
