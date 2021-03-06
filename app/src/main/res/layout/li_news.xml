@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- TODO STEP 5: change the textColor to use theme's colorOnSurface in both textViews.
+    <!-- TODO STEP 5: Change the textColor to use theme's colorOnSurface in both textViews.
             When not assigning a background to the view, it uses colorSurface from theme.
             Therefore the text color should use colorOnSurface. When theme changes,
             the color will be decided by the declared theme attribute. -->
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/li_news_title"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <!-- TODO STEP 6: change the background of the divider view to use theme colorOnSurface,
+    <!-- TODO STEP 6: Change the background of the divider view to use theme colorOnSurface,
             to match the textViews text color.-->
     <View
         android:layout_width="match_parent"
