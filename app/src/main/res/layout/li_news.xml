@@ -12,7 +12,8 @@
 
     <!--TODO STEP 1: Create values resource file shape.xml at res/values/-->
     <!--TODO STEP 2: In shape.xml, Declare a style overlay called ShapeAppearanceOverlay_cardView. Set attributes for it: cornerFamily and cornerSize for various corners.-->
-    <!--TODO STEP 3: Create a style "Widget.AppTheme.MaterialCardView which inherits from "Widget.MaterialComponents.CardView". Give it one attribute: "shapeAppearanceOverlay" and set its value to our newly created card shape overlay.-->
+    <!--TODO STEP 3: Create a style "Widget.AppTheme.MaterialCardView which inherits from "Widget.MaterialComponents.CardView".
+            Give it one attribute: "shapeAppearanceOverlay" and set its value to our newly created card shape overlay.-->
     <!--TODO STEP 7: Set the ImageView shapeAppearanceOverly directly to this ShapeableImageView using app:shapeAppearanceOverlay attr. Run the app - see our item shape now. -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/li_news_image"
