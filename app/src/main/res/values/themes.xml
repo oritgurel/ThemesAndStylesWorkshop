@@ -2,19 +2,19 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <!--   TODO STEP 2: set primary brand colors to theme by overriding colorPrimary,
-                colorPrimaryVariant and colorOnPrimary from colors.xml.
+        <!--   TODO STEP 1: set primary brand colors to theme by overriding colorPrimary,
+                colorPrimaryVariant (dark) and colorOnPrimary from colors.xml.
                 note to use attributes that supports AppCompat and not android: platform attributes.-->
         <!-- Secondary brand color. -->
-        <!--   TODO STEP 3: set secondary brand colors to theme by overriding colorSecondary,
-                colorSecondaryVariant and colorOnSecondary from colors.xml.
+        <!--   TODO STEP 2: set secondary brand colors to theme by overriding colorSecondary,
+                colorSecondaryVariant (dark) and colorOnSecondary from colors.xml.
                 note to use attributes that supports AppCompat and not android: platform attributes.-->
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <!-- TODO STEP 10: Add theme for Pro mode which inherits from "AppTheme"
+    <!-- TODO STEP 3: Add theme for Pro mode which inherits from "AppTheme"
             called "AppTheme.Pro" (dot notation inheritance). Use Pro colors from colors.xml,
             in the same manner of AppTheme. -->
 

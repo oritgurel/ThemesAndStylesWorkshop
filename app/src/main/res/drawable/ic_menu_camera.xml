@@ -3,7 +3,7 @@
     android:height="24dp"
     android:viewportWidth="24.0"
     android:viewportHeight="24.0">
-<!--    TODO STEP 8: Change drawer icon fillColor to use theme's colorOnSurface.
+<!--    TODO STEP 5: Change drawer icon fillColor to use theme's colorOnSurface.
             Perform for all drawer icons.-->
     <path
         android:fillColor="#000000"

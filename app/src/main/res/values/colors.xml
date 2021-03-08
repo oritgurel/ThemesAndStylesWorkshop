@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- TODO STEP 0: Run the app and see initial colors before overriding our AppTheme theme attributes. -->
-    <!-- TODO STEP 1: See provided color scheme, it was exported using: https://material.io/resources/color/#!/?view.left=0iew.right=0-->
     <!--Primary Theme colors-->
     <color name="primaryColor">#80cbc4</color>
     <color name="primaryLightColor">#b2fef7</color>
     <color name="primaryDarkColor">#4f9a94</color>
-    <color name="colorOnPrimary">@color/primaryTextColor</color>
     <color name="secondaryColor">#ba68c8</color>
     <color name="secondaryLightColor">#ee98fb</color>
     <color name="secondaryDarkColor">#883997</color>
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#f5f5f5</color>
 
-    <!-- TODO STEP 9: Run the app and notice the changes - how it now uses our custom theme colors. -->
     <!-- Pro colors-->
     <color name="primaryColorPro">#ffca28</color>
     <color name="primaryLightColorPro">#fffd61</color>
